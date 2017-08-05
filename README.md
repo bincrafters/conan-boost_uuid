@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Uuid](https://github.com/Boostorg/Uuid) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Uuid%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Uuid%3Abincrafters).
 
 ## For Users: Use this package
 
