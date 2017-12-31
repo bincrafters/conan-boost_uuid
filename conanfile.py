@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostUuidConan(ConanFile):
     name = "boost_uuid"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-uuid"
+    url = "https://github.com/bincrafters/conan-boost_uuid"
 
     lib_short_names = ["uuid"]
     is_header_only = True
