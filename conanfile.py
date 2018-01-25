@@ -8,7 +8,8 @@ class BoostUuidConan(ConanFile):
     name = "boost_uuid"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_uuid"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["uuid"]
     is_header_only = True
 
