@@ -11,6 +11,7 @@ class BoostUuidConan(ConanFile):
     exports = ["LICENSE.md"]
     lib_short_names = ["uuid"]
     is_header_only = True
+    settings = "os"
 
     def package_id_additional(self):
         self.info.header_only()
@@ -32,6 +33,10 @@ class BoostUuidConan(ConanFile):
         "boost_type_traits/1.67.0@bincrafters/testing",
         "boost_winapi/1.67.0@bincrafters/testing"
     )
+
+    def package_info_additional(self):
+        if self.settings.os == "Windows":
+        	self.cpp_info.libs.append("Bcrypt")
 
     # BEGIN
 
