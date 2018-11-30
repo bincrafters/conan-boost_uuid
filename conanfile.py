@@ -4,7 +4,7 @@
 from conans import python_requires
 
 
-base = python_requires("boost_base/1.67.0@bincrafters/testing")
+base = python_requires("boost_base/1.68.0@bincrafters/testing")
 
 class BoostUuidConan(base.BoostBaseConan):
     name = "boost_uuid"
@@ -14,13 +14,14 @@ class BoostUuidConan(base.BoostBaseConan):
     b2_requires = [
         "boost_assert",
         "boost_config",
+        "boost_container_hash",
         "boost_core",
         "boost_io",
+        "boost_move",
         "boost_numeric_conversion",
         "boost_predef",
         "boost_random",
         "boost_serialization",
-        "boost_smart_ptr",
         "boost_static_assert",
         "boost_throw_exception",
         "boost_tti",
@@ -35,4 +36,3 @@ class BoostUuidConan(base.BoostBaseConan):
     def package_id_additional(self):
         self.info.header_only()
         self.info.settings.os = str(self.settings.os)
-
