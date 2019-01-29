@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.69.0@bincrafters/testing")
 
 class BoostUuidConan(base.BoostBaseConan):
     name = "boost_uuid"
+    version = "1.69.0"
     url = "https://github.com/bincrafters/conan-boost_uuid"
     lib_short_names = ["uuid"]
     header_only_libs = ["uuid"]
@@ -35,4 +36,4 @@ class BoostUuidConan(base.BoostBaseConan):
 
     def package_id_additional(self):
         self.info.header_only()
-        self.info.settings.os = str(self.settings.os)
+        self.info.settings.os = str(self.d.os)
