@@ -36,4 +36,4 @@ class BoostUuidConan(base.BoostBaseConan):
 
     def package_id_additional(self):
         self.info.header_only()
-        self.info.settings.os = str(self.d.os)
+        self.info.settings.os = str(self.settings.os)
